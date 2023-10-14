@@ -1,0 +1,250 @@
+/*todo reset css  */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*todo reset css end  */
+
+html {
+  font-size: 12px;
+}
+
+:root {
+  --color-activeDark: hsl(238, 29%, 16%);
+  --color-hoverOrange: hsl(14, 88%, 65%);
+  --color-veryDarkGrayishBlue: hsl(237, 12%, 33%);
+  --color-darkGrayishBlue: hsl(240, 6%, 50%);
+  --fontSize: 12px;
+}
+
+body {
+  background-image: linear-gradient(
+    to top,
+    #6565e7,
+    #7a66e8,
+    #8d66e9,
+    #9f67e9,
+    #af67e9
+  );
+  height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  background-color: #fbfbfc;
+  font-size: 1.4rem;
+  width: 1060px;
+  height: 600px;
+  border-radius: 2rem;
+  display: flex;
+}
+
+#imgDiv {
+  width: 50%;
+  height: auto;
+  max-width: 55rem;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(-rem);
+}
+
+
+#womanAndPlatform {
+  position: absolute;
+  top: 18%;
+  left: -15.2%;
+  z-index: 10;
+}
+
+#boxImg {
+  position: absolute;
+  top: 44%;
+  left: 17.5%;  
+  z-index: 20;
+}
+
+#bgPattern { 
+  position: absolute;
+  width: 78rem;
+  top: -42%;
+  left: -108%;
+}
+
+/* ? Imageside css end */
+
+/* ? Textside css */
+
+#textDiv {
+  width: 50%;
+  height: 50%;
+  margin: 2rem 5rem 2rem 0;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 5vh 0;
+}
+
+.acordionTopItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+hr { 
+  background-color: var(--color-darkGrayishBlue);
+  height: 1px;
+  border: none;
+}
+
+.acordionTopItem { 
+  margin: 1.5rem 0;
+}
+
+.acordionTopItem  {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.acordionTopItem:hover { 
+  color: var(--color-hoverOrange);
+}
+
+.acordionBottomItem { 
+  margin: 1.5rem 0 2rem 0;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+    background-color: black;
+  }
+}
