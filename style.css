@@ -157,10 +157,11 @@ body {
 }
 
 #container {
+  position: relative;
   background-color: #fbfbfc;
   font-size: 1.4rem;
   width: 1060px;
-  height: 600px;
+  min-height: 600px;
   border-radius: 2rem;
   display: flex;
 }
@@ -171,9 +172,7 @@ body {
   max-width: 55rem;
   position: relative;
   overflow: hidden;
-  transform: translateY(-rem);
 }
-
 
 #womanAndPlatform {
   position: absolute;
@@ -184,12 +183,12 @@ body {
 
 #boxImg {
   position: absolute;
-  top: 44%;
-  left: 17.5%;  
+  top: 41%;
+  left: -92px;
   z-index: 20;
 }
 
-#bgPattern { 
+#bgPattern {
   position: absolute;
   width: 78rem;
   top: -42%;
@@ -203,7 +202,7 @@ body {
 #textDiv {
   width: 50%;
   height: 50%;
-  margin: 2rem 5rem 2rem 0;
+  margin: 1rem 5rem 2rem 0;
 }
 
 h1 {
@@ -212,39 +211,62 @@ h1 {
   margin: 5vh 0;
 }
 
+.acordionItemContainer{ 
+  transition: all 2s ease-in-out;
+}
+
 .acordionTopItem {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 1rem 0;
 }
 
-hr { 
+hr {
   background-color: var(--color-darkGrayishBlue);
   height: 1px;
   border: none;
 }
 
-.acordionTopItem { 
-  margin: 1.5rem 0;
-}
-
-.acordionTopItem  {
+.acordionTopItem {
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
 
-.acordionTopItem:hover { 
+.acordionTopItem:hover {
   color: var(--color-hoverOrange);
 }
 
-.acordionBottomItem { 
+.acordionBottomItem {
   margin: 1.5rem 0 2rem 0;
   display: none;
+  line-height: 23px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  opacity: 0;
 }
 
-@media screen and (max-width: 600px) {
+
+
+/* @media screen and (max-width: 600px) {
   #container {
-    background-color: black;
   }
+} */
+
+
+.visible {
+  opacity: 1;
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+
+.rotateArrow{ 
+  transition: 0.3s ease-in-out all;
+  transform: rotate(-180deg);
+}
+
+.rodtate {
+  transition: ease-in 0.3s all;
+  transform: rotate(0deg);
 }
