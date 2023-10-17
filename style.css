@@ -211,16 +211,14 @@ h1 {
   margin: 5vh 0;
 }
 
-.acordionItemContainer{ 
-  transition: all 2s ease-in-out;
-}
-
 .acordionTopItem {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin: 1rem 0;
+  font-weight: 400;
+  transition: 0.3s ease-in-out all;
 }
 
 hr {
@@ -240,28 +238,32 @@ hr {
 
 .acordionBottomItem {
   margin: 1.5rem 0 2rem 0;
-  display: none;
+  visibility: hidden;
+  max-height: 0;
   line-height: 23px;
   cursor: pointer;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
 }
-
-
 
 /* @media screen and (max-width: 600px) {
   #container {
   }
 } */
 
+.bold {
+  font-weight: 700;
+}
 
 .visible {
   opacity: 1;
   display: flex;
-  transition: all 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  visibility: visible;
+  max-height: inherit;
 }
 
-.rotateArrow{ 
+.rotateArrow {
   transition: 0.3s ease-in-out all;
   transform: rotate(-180deg);
 }
